@@ -12,7 +12,7 @@
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: #0D21A1;
   --text-color: hsl(var(--hue), 8%, 35%);
-  --body-color: hsl(var(--hue), 100%, 99%);
+  --body-color: #011638;
   --container-color: #f8c827;
 
   /*========== Font and typography ==========*/
@@ -68,6 +68,7 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 2rem;
+  background-color: #fff;
 }
 
 .section__title {
