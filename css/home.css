@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+
+.home__container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.home__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+}
+
+.home__left img{
+    border-radius: 1%;
+}
+.home__right p{
+    color: var(--first-color);
+}
+.section__title__home {
+    font-size: 2rem;
+    color: var(--first-color);
+    text-align: left;
+    margin-bottom: 1.5rem;
+    align-items: left;
+}
+
+@media screen and (max-width: 768px){
+    .home__container{
+        padding: 20px;
+    }
+    .home__wrapper{
+        grid-template-columns: 1fr;
+    }
+    .section__title__home{
+    text-align: center;
+    }
+    .home__right{
+        text-align: center;
+    }
+}

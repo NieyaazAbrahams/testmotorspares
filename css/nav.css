@@ -12,7 +12,7 @@
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: #0D21A1;
   --text-color: hsl(var(--hue), 8%, 35%);
-  --body-color: #011638;
+  --body-color: #fff;
   --container-color: #f8c827;
 
   /*========== Font and typography ==========*/
@@ -66,20 +66,30 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.__page_separator{
+  height: 100vh;
+}
 .section {
   padding: 4.5rem 0 2rem;
-  background-color: #fff;
+  background-color: var(--body-color);
+}
+
+section{
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 2rem;
+  position: relative;
 }
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--first-color);
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
 .section__height {
-  height: 100vh;
+  height: contain;
 }
 
 /*=============== LAYOUT ===============*/
